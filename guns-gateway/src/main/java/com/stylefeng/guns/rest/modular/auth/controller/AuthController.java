@@ -25,7 +25,7 @@ import javax.annotation.Resource;
 @RestController
 public class AuthController {
 
-    @Reference(interfaceClass = UserApi.class)
+    @Reference(interfaceClass = UserApi.class,check = false)
     private UserApi userApi;
     @Autowired
     private JwtTokenUtil jwtTokenUtil;

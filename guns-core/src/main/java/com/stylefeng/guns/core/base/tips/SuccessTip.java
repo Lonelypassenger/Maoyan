@@ -10,7 +10,7 @@ public class SuccessTip extends Tip {
 	
 	public SuccessTip(){
 
-		super.code = 200;
-		super.message = "操作成功";
+		super.status = 200;
+		super.msg = "操作成功";
 	}
 }
