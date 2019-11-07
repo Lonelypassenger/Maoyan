@@ -10,7 +10,8 @@ import com.stylefeng.guns.user.vo.UserInfoModel;
  */
 public class CurrentUser {
     //线程绑定的存储空间
-    private static final ThreadLocal<String> threadLocal = new ThreadLocal<>();
+    //这种类型的ThreadLocal如果出现线程且换它可以帮助我们保存当前的数据。
+    private static final InheritableThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
 
         public static void saveUserId(String id){
         threadLocal.set(id);

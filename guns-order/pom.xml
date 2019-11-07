@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stylefeng.guns</groupId>
-    <artifactId>guns-gateway</artifactId>
+    <artifactId>guns-order</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>guns-gateway</name>
-    <description>guns 网关服务器</description>
+    <name>guns-order</name>
+    <description>guns REST服务器</description>
 
     <parent>
         <groupId>com.stylefeng</groupId>
@@ -19,27 +19,9 @@
     </parent>
 
     <dependencies>
-
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-            <version>2.0.0.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-            <version>2.0.0.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
-            <scope>provided</scope>
+            <groupId>com.stylefeng</groupId>
+            <artifactId>guns-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -65,10 +47,6 @@
             <version>2.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.stylefeng</groupId>
-            <artifactId>guns-core</artifactId>
-        </dependency>
-        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
@@ -79,6 +57,17 @@
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
